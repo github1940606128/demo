@@ -1,0 +1,7 @@
+server:
+  port: 9898
+spring:
+  redis:
+    host: 120.53.22.254
+    port: 6379
+    password: Wx19980613...

@@ -50,6 +50,16 @@ public class Swagger3Config {
                 .groupName("系统设置")
                 .pathMapping("/");
     }
+    public Docket api_system1(){
+        return new Docket(DocumentationType.OAS_30)
+//                .apiInfo(apiInfo())
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.ant("/xxx/**"))
+                .build()
+                .groupName("xx设置")
+                .pathMapping("/");
+    }
 
 }
 
